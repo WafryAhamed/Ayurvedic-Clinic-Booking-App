@@ -4,6 +4,7 @@ import 'core/theme/app_theme.dart';
 import 'core/routes/app_routes.dart';
 import 'features/home/providers/doctor_provider.dart';
 import 'features/booking/providers/booking_provider.dart';
+import 'features/appointments/providers/appointment_provider.dart'; // Phase 2
 
 void main() {
   runApp(const AyurvedicClinicApp());
@@ -17,11 +18,15 @@ class AyurvedicClinicApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
+        // Phase 1 Providers
         // Doctor Provider for managing doctor list and operations
         ChangeNotifierProvider(create: (_) => DoctorProvider()),
 
         // Booking Provider for managing booking flow
         ChangeNotifierProvider(create: (_) => BookingProvider()),
+
+        // Phase 2 Provider - Appointment Management
+        ChangeNotifierProvider(create: (_) => AppointmentProvider()),
       ],
       child: MaterialApp(
         title: 'Ayurvedic Clinic',

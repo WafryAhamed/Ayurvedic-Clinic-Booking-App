@@ -138,7 +138,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               color: AppColors.surface,
               borderRadius: BorderRadius.circular(AppRadius.xl),
               border: Border.all(
-                color: AppColors.primary.withOpacity(0.3),
+                color: AppColors.primary.withValues(alpha: 0.3),
                 width: 2,
               ),
             ),

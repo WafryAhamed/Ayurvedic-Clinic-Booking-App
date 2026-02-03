@@ -31,7 +31,7 @@ class _SearchScreenState extends State<SearchScreen> {
 
     // Debounce search (simple implementation)
     Future.delayed(const Duration(milliseconds: 500), () {
-      if (_searchQuery == query) {
+      if (_searchQuery == query && mounted) {
         context.read<DoctorProvider>().searchDoctors(query);
       }
     });

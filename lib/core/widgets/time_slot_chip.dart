@@ -28,7 +28,7 @@ class TimeSlotChip extends StatelessWidget {
         ),
         decoration: BoxDecoration(
           color: !isAvailable
-              ? AppColors.disabled.withOpacity(0.2)
+              ? AppColors.disabled.withValues(alpha: 0.2)
               : isSelected
               ? AppColors.primary
               : AppColors.surface,

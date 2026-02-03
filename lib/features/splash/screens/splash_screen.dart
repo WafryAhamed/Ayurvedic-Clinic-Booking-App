@@ -81,7 +81,7 @@ class _SplashScreenState extends State<SplashScreen>
                       borderRadius: BorderRadius.circular(AppRadius.xl),
                       boxShadow: [
                         BoxShadow(
-                          color: AppColors.black.withOpacity(0.2),
+                          color: AppColors.black.withValues(alpha: 0.2),
                           blurRadius: 20,
                           offset: const Offset(0, 10),
                         ),
@@ -109,7 +109,7 @@ class _SplashScreenState extends State<SplashScreen>
                   Text(
                     'Natural Healing, Modern Convenience',
                     style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                      color: AppColors.white.withOpacity(0.9),
+                      color: AppColors.white.withValues(alpha: 0.9),
                     ),
                   ),
 

@@ -102,10 +102,10 @@ class _PatientInfoScreenState extends State<PatientInfoScreen> {
             Container(
               padding: EdgeInsets.all(AppSpacing.md),
               decoration: BoxDecoration(
-                color: AppColors.primary.withOpacity(0.1),
+                color: AppColors.primary.withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(AppRadius.md),
                 border: Border.all(
-                  color: AppColors.primary.withOpacity(0.3),
+                  color: AppColors.primary.withValues(alpha: 0.3),
                   width: 1,
                 ),
               ),
@@ -204,7 +204,7 @@ class _PatientInfoScreenState extends State<PatientInfoScreen> {
           color: AppColors.white,
           boxShadow: [
             BoxShadow(
-              color: AppColors.black.withOpacity(0.05),
+              color: AppColors.black.withValues(alpha: 0.05),
               blurRadius: 10,
               offset: const Offset(0, -2),
             ),

@@ -14,10 +14,13 @@ class DoctorCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       elevation: 2,
-      shadowColor: AppColors.primary.withOpacity(0.1),
+      shadowColor: AppColors.primary.withValues(alpha: 0.1),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(AppRadius.lg),
-        side: BorderSide(color: AppColors.divider.withOpacity(0.5), width: 1),
+        side: BorderSide(
+          color: AppColors.divider.withValues(alpha: 0.5),
+          width: 1,
+        ),
       ),
       child: InkWell(
         onTap: onTap,
@@ -35,7 +38,7 @@ class DoctorCard extends StatelessWidget {
                   color: AppColors.surface,
                   borderRadius: BorderRadius.circular(AppRadius.md),
                   border: Border.all(
-                    color: AppColors.primary.withOpacity(0.3),
+                    color: AppColors.primary.withValues(alpha: 0.3),
                     width: 2,
                   ),
                 ),
@@ -107,7 +110,7 @@ class DoctorCard extends StatelessWidget {
                         vertical: AppSpacing.xs,
                       ),
                       decoration: BoxDecoration(
-                        color: AppColors.primary.withOpacity(0.1),
+                        color: AppColors.primary.withValues(alpha: 0.1),
                         borderRadius: BorderRadius.circular(AppRadius.sm),
                       ),
                       child: Text(

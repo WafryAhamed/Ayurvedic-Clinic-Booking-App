@@ -76,7 +76,7 @@ class DoctorDetailsScreen extends StatelessWidget {
                           vertical: AppSpacing.xs,
                         ),
                         decoration: BoxDecoration(
-                          color: Colors.amber.withOpacity(0.2),
+                          color: Colors.amber.withValues(alpha: 0.2),
                           borderRadius: BorderRadius.circular(AppRadius.sm),
                         ),
                         child: Row(
@@ -195,7 +195,9 @@ class DoctorDetailsScreen extends StatelessWidget {
                                   vertical: AppSpacing.xs,
                                 ),
                                 decoration: BoxDecoration(
-                                  color: AppColors.success.withOpacity(0.2),
+                                  color: AppColors.success.withValues(
+                                    alpha: 0.2,
+                                  ),
                                   borderRadius: BorderRadius.circular(
                                     AppRadius.sm,
                                   ),
@@ -229,7 +231,7 @@ class DoctorDetailsScreen extends StatelessWidget {
           color: AppColors.white,
           boxShadow: [
             BoxShadow(
-              color: AppColors.black.withOpacity(0.05),
+              color: AppColors.black.withValues(alpha: 0.05),
               blurRadius: 10,
               offset: const Offset(0, -2),
             ),

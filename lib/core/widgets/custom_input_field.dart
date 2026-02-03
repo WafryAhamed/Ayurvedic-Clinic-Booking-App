@@ -69,7 +69,7 @@ class CustomInputField extends StatelessWidget {
             filled: true,
             fillColor: enabled
                 ? AppColors.surface
-                : AppColors.disabled.withOpacity(0.1),
+                : AppColors.disabled.withValues(alpha: 0.1),
             counterText: '', // Hide character counter
           ),
         ),

@@ -98,7 +98,7 @@ class _ConfirmationScreenState extends State<ConfirmationScreen>
                         width: 120,
                         height: 120,
                         decoration: BoxDecoration(
-                          color: AppColors.success.withOpacity(0.1),
+                          color: AppColors.success.withValues(alpha: 0.1),
                           shape: BoxShape.circle,
                         ),
                         child: Icon(
@@ -140,7 +140,7 @@ class _ConfirmationScreenState extends State<ConfirmationScreen>
 
                     // Booking ID Card
                     Card(
-                      color: AppColors.primary.withOpacity(0.1),
+                      color: AppColors.primary.withValues(alpha: 0.1),
                       child: Padding(
                         padding: EdgeInsets.all(AppSpacing.md),
                         child: Column(
@@ -286,10 +286,10 @@ class _ConfirmationScreenState extends State<ConfirmationScreen>
                     Container(
                       padding: EdgeInsets.all(AppSpacing.md),
                       decoration: BoxDecoration(
-                        color: AppColors.warning.withOpacity(0.1),
+                        color: AppColors.warning.withValues(alpha: 0.1),
                         borderRadius: BorderRadius.circular(AppRadius.md),
                         border: Border.all(
-                          color: AppColors.warning.withOpacity(0.3),
+                          color: AppColors.warning.withValues(alpha: 0.3),
                         ),
                       ),
                       child: Column(

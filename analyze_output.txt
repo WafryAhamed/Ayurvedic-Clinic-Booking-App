@@ -1,0 +1,148 @@
+﻿Analyzing ayurvedic_clinic_booking_app...                       
+
+  error - Target of URI doesn't exist: '../features/splash/screens/splash_screen.dart' - lib\core\routes\app_routes.dart:2:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../features/onboarding/screens/onboarding_screen.dart' - lib\core\routes\app_routes.dart:3:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../features/home/screens/home_screen.dart' - lib\core\routes\app_routes.dart:4:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../features/search/screens/search_screen.dart' - lib\core\routes\app_routes.dart:5:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../features/filter/screens/filter_screen.dart' - lib\core\routes\app_routes.dart:6:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../features/doctor_details/screens/doctor_details_screen.dart' - lib\core\routes\app_routes.dart:7:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../features/booking/screens/patient_info_screen.dart' - lib\core\routes\app_routes.dart:8:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../features/booking/screens/date_time_selection_screen.dart' - lib\core\routes\app_routes.dart:9:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../features/booking/screens/booking_review_screen.dart' - lib\core\routes\app_routes.dart:10:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../features/confirmation/screens/confirmation_screen.dart' - lib\core\routes\app_routes.dart:11:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../features/appointments/my_appointments/screens/my_appointments_screen.dart' - lib\core\routes\app_routes.dart:13:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../features/appointments/appointment_details/screens/appointment_details_screen.dart' - lib\core\routes\app_routes.dart:14:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../features/appointments/cancel_appointment/screens/cancel_appointment_screen.dart' - lib\core\routes\app_routes.dart:15:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../features/appointments/reschedule_appointment/screens/reschedule_appointment_screen.dart' - lib\core\routes\app_routes.dart:16:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../features/system/screens/loading_screen.dart' - lib\core\routes\app_routes.dart:18:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../features/system/screens/no_internet_screen.dart' - lib\core\routes\app_routes.dart:19:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../features/system/screens/error_screen.dart' - lib\core\routes\app_routes.dart:20:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../features/system/screens/empty_state_screen.dart' - lib\core\routes\app_routes.dart:21:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../features/system/screens/session_expired_screen.dart' - lib\core\routes\app_routes.dart:22:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../features/profile/screens/profile_screen.dart' - lib\core\routes\app_routes.dart:24:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../features/profile/screens/edit_profile_screen.dart' - lib\core\routes\app_routes.dart:25:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../features/profile/screens/about_screen.dart' - lib\core\routes\app_routes.dart:26:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../features/legal/screens/terms_screen.dart' - lib\core\routes\app_routes.dart:28:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../features/legal/screens/privacy_screen.dart' - lib\core\routes\app_routes.dart:29:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../features/admin/screens/admin_login_screen.dart' - lib\core\routes\app_routes.dart:31:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../features/admin/screens/admin_dashboard_screen.dart' - lib\core\routes\app_routes.dart:32:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../features/admin/screens/doctor_management_screen.dart' - lib\core\routes\app_routes.dart:33:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../features/admin/screens/schedule_management_screen.dart' - lib\core\routes\app_routes.dart:34:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../features/admin/screens/appointment_management_screen.dart' - lib\core\routes\app_routes.dart:35:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../features/admin/screens/reports_screen.dart' - lib\core\routes\app_routes.dart:36:8 - uri_does_not_exist
+  error - The name 'SplashScreen' isn't a class - lib\core\routes\app_routes.dart:86:34 - creation_with_non_type
+  error - The name 'OnboardingScreen' isn't a class - lib\core\routes\app_routes.dart:87:38 - creation_with_non_type
+  error - The name 'HomeScreen' isn't a class - lib\core\routes\app_routes.dart:88:32 - creation_with_non_type
+  error - The name 'SearchScreen' isn't a class - lib\core\routes\app_routes.dart:89:34 - creation_with_non_type
+  error - The name 'FilterScreen' isn't a class - lib\core\routes\app_routes.dart:90:34 - creation_with_non_type
+  error - The name 'DoctorDetailsScreen' isn't a class - lib\core\routes\app_routes.dart:91:41 - creation_with_non_type
+  error - The name 'PatientInfoScreen' isn't a class - lib\core\routes\app_routes.dart:92:39 - creation_with_non_type
+  error - The name 'DateTimeSelectionScreen' isn't a class - lib\core\routes\app_routes.dart:93:45 - creation_with_non_type
+  error - The name 'BookingReviewScreen' isn't a class - lib\core\routes\app_routes.dart:94:41 - creation_with_non_type
+  error - The name 'ConfirmationScreen' isn't a class - lib\core\routes\app_routes.dart:95:40 - creation_with_non_type
+  error - The name 'MyAppointmentsScreen' isn't a class - lib\core\routes\app_routes.dart:98:42 - creation_with_non_type
+  error - The name 'AppointmentDetailsScreen' isn't a class - lib\core\routes\app_routes.dart:99:46 - creation_with_non_type
+  error - The name 'CancelAppointmentScreen' isn't a class - lib\core\routes\app_routes.dart:100:45 - creation_with_non_type
+  error - The name 'RescheduleAppointmentScreen' isn't a class - lib\core\routes\app_routes.dart:101:49 - creation_with_non_type
+  error - The name 'LoadingScreen' isn't a class - lib\core\routes\app_routes.dart:104:35 - creation_with_non_type
+  error - The name 'NoInternetScreen' isn't a class - lib\core\routes\app_routes.dart:105:38 - creation_with_non_type
+  error - The name 'ErrorScreen' isn't a class - lib\core\routes\app_routes.dart:106:33 - creation_with_non_type
+  error - The name 'EmptyStateScreen' isn't a class - lib\core\routes\app_routes.dart:107:38 - creation_with_non_type
+  error - The name 'SessionExpiredScreen' isn't a class - lib\core\routes\app_routes.dart:108:42 - creation_with_non_type
+  error - The name 'ProfileScreen' isn't a class - lib\core\routes\app_routes.dart:111:35 - creation_with_non_type
+  error - The name 'EditProfileScreen' isn't a class - lib\core\routes\app_routes.dart:112:39 - creation_with_non_type
+  error - The name 'AboutScreen' isn't a class - lib\core\routes\app_routes.dart:113:33 - creation_with_non_type
+  error - The name 'TermsScreen' isn't a class - lib\core\routes\app_routes.dart:116:33 - creation_with_non_type
+  error - The name 'PrivacyScreen' isn't a class - lib\core\routes\app_routes.dart:117:35 - creation_with_non_type
+  error - The name 'AdminLoginScreen' isn't a class - lib\core\routes\app_routes.dart:120:38 - creation_with_non_type
+  error - The name 'AdminDashboardScreen' isn't a class - lib\core\routes\app_routes.dart:121:42 - creation_with_non_type
+  error - The name 'DoctorManagementScreen' isn't a class - lib\core\routes\app_routes.dart:122:44 - creation_with_non_type
+  error - The name 'ScheduleManagementScreen' isn't a class - lib\core\routes\app_routes.dart:123:46 - creation_with_non_type
+  error - The name 'AppointmentManagementScreen' isn't a class - lib\core\routes\app_routes.dart:124:49 - creation_with_non_type
+  error - The name 'ReportsScreen' isn't a class - lib\core\routes\app_routes.dart:125:35 - creation_with_non_type
+  error - The argument type 'CardTheme' can't be assigned to the parameter type 'CardThemeData?'.  - lib\core\theme\app_theme.dart:183:18 - argument_type_not_assignable
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\core\widgets\custom_input_field.dart:72:38 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\core\widgets\doctor_card.dart:17:38 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\core\widgets\doctor_card.dart:20:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\core\widgets\doctor_card.dart:38:46 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\core\widgets\doctor_card.dart:110:50 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\core\widgets\time_slot_chip.dart:31:36 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin\screens\admin_dashboard_screen.dart:25:44 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin\screens\admin_dashboard_screen.dart:62:44 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin\screens\admin_login_screen.dart:26:44 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin\screens\admin_login_screen.dart:64:44 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin\screens\appointment_management_screen.dart:25:44 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin\screens\appointment_management_screen.dart:62:44 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin\screens\doctor_management_screen.dart:25:44 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin\screens\doctor_management_screen.dart:62:44 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin\screens\reports_screen.dart:25:44 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin\screens\reports_screen.dart:62:44 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin\screens\schedule_management_screen.dart:25:44 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin\screens\schedule_management_screen.dart:62:44 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\appointments\appointment_details\screens\appointment_details_screen.dart:80:46 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\appointments\appointment_details\screens\appointment_details_screen.dart:211:48 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\appointments\appointment_details\screens\appointment_details_screen.dart:325:44 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\appointments\cancel_appointment\screens\cancel_appointment_screen.dart:117:42 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\appointments\cancel_appointment\screens\cancel_appointment_screen.dart:160:42 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\appointments\my_appointments\screens\my_appointments_screen.dart:177:40 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\appointments\reschedule_appointment\screens\reschedule_appointment_screen.dart:106:48 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\appointments\reschedule_appointment\screens\reschedule_appointment_screen.dart:165:56 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\appointments\reschedule_appointment\screens\reschedule_appointment_screen.dart:189:63 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\appointments\widgets\appointment_card.dart:31:38 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\appointments\widgets\confirmation_dialog.dart:69:35 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\appointments\widgets\status_badge.dart:23:32 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\booking\screens\booking_review_screen.dart:36:44 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\booking\screens\booking_review_screen.dart:38:63 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\booking\screens\booking_review_screen.dart:210:38 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\booking\screens\date_time_selection_screen.dart:233:48 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\booking\screens\date_time_selection_screen.dart:236:50 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\booking\screens\date_time_selection_screen.dart:284:38 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\booking\screens\patient_info_screen.dart:105:42 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\booking\screens\patient_info_screen.dart:108:44 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\booking\screens\patient_info_screen.dart:207:38 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\confirmation\screens\confirmation_screen.dart:101:52 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\confirmation\screens\confirmation_screen.dart:143:48 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\confirmation\screens\confirmation_screen.dart:289:50 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\confirmation\screens\confirmation_screen.dart:292:52 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\doctor_details\screens\doctor_details_screen.dart:79:47 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\doctor_details\screens\doctor_details_screen.dart:198:60 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\doctor_details\screens\doctor_details_screen.dart:232:38 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\filter\screens\filter_screen.dart:131:42 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\filter\screens\filter_screen.dart:178:44 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\onboarding\screens\onboarding_screen.dart:141:42 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\profile\screens\edit_profile_screen.dart:66:42 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\profile\screens\edit_profile_screen.dart:139:63 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\profile\screens\edit_profile_screen.dart:179:40 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\profile\screens\profile_screen.dart:78:42 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\profile\screens\profile_screen.dart:184:38 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps - lib\features\search\screens\search_screen.dart:35:9 - use_build_context_synchronously
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\splash\screens\splash_screen.dart:84:50 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\splash\screens\splash_screen.dart:112:46 - deprecated_member_use
+   info - The 'child' argument should be last in widget constructor invocations - lib\features\system\screens\empty_state_screen.dart:77:19 - sort_child_properties_last
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\system\screens\error_screen.dart:45:42 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\system\screens\no_internet_screen.dart:28:42 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\system\screens\session_expired_screen.dart:32:44 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\system\screens\session_expired_screen.dart:73:44 - deprecated_member_use
+  error - The name 'MyApp' isn't a class - test\widget_test.dart:16:35 - creation_with_non_type
+
+flutter : 124 issues 
+found. (ran in 4.5s)
+At line:1 char:1
++ flutter analyze 
+--no-pub 2>&1 | 
+Out-File -FilePath 
+"analyze_output.tx 
+...
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (124 iss   
+ ues found. (ran     
+in 4.5s):String)     
+[], RemoteExcep    
+tion
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
