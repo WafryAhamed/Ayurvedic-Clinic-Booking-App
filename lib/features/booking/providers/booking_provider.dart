@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import '../../../domain/entities/booking.dart';
 import '../../../domain/entities/doctor.dart';
 import '../../../domain/repositories/booking_repository.dart';
-import '../../../data/repositories/mock_booking_repository.dart';
+import '../../../data/repositories/booking_repository_impl.dart';
 
 /// Booking provider state enum
 enum BookingState { initial, loading, success, error }
 
 /// Provider for managing booking flow and validation
 class BookingProvider extends ChangeNotifier {
-  final BookingRepository _repository = MockBookingRepository();
+  final BookingRepository _repository = BookingRepositoryImpl();
 
   // State
   BookingState _state = BookingState.initial;

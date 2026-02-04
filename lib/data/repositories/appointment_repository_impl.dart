@@ -1,54 +1,70 @@
-import 'dart:math';
+import 'dart:convert';
+import 'package:http/http.dart' as http;
+import '../../core/config/api_constants.dart';
 import '../../domain/entities/appointment.dart';
+import '../../data/models/appointment_model.dart';
 import '../../domain/repositories/appointment_repository.dart';
-import '../mock/mock_appointments.dart';
 
-/// Mock implementation of AppointmentRepository
-/// Simulates API calls with Future.delayed for realistic loading states
-/// NO backend integration - all data is in-memory only
 class AppointmentRepositoryImpl implements AppointmentRepository {
-  // Random number generator for simulating occasional errors
-  final _random = Random();
+  // Hardcoded demo user phone number to fetch "My Appointments"
+  final String _demoUserPhone = "0771234567";
 
   @override
   Future<List<Appointment>> getAppointments() async {
-    // Simulate network delay (1-2 seconds)
-    await Future.delayed(const Duration(milliseconds: 1500));
+    try {
+      final response = await http.get(
+        Uri.parse('${ApiConstants.baseUrl}/appointments?phone=$_demoUserPhone'),
+      );
 
-    // Simulate occasional errors (10% chance)
-    if (_random.nextInt(10) == 0) {
-      throw Exception('Failed to load appointments. Please try again.');
+      if (response.statusCode == 200) {
+        final List<dynamic> data = json.decode(response.body);
+        return data
+            .map<Appointment>(
+              (json) => AppointmentModel.fromJson(json).toEntity(),
+            )
+            .toList();
+      } else {
+        throw Exception('Failed to load appointments: ${response.statusCode}');
+      }
+    } catch (e) {
+      print('Error fetching appointments: $e');
+      throw Exception('Failed to load appointments');
     }
-
-    // Return mock data
-    return MockAppointments.getAllAppointments();
   }
 
   @override
   Future<Appointment?> getAppointmentById(String id) async {
-    // Simulate network delay
-    await Future.delayed(const Duration(milliseconds: 800));
+    try {
+      final response = await http.get(
+        Uri.parse('${ApiConstants.baseUrl}/appointments/$id'),
+      );
 
-    // Simulate occasional errors (5% chance)
-    if (_random.nextInt(20) == 0) {
-      throw Exception('Failed to load appointment details. Please try again.');
+      if (response.statusCode == 200) {
+        return AppointmentModel.fromJson(json.decode(response.body)).toEntity();
+      } else {
+        return null;
+      }
+    } catch (e) {
+      print('Error fetching appointment details: $e');
+      throw Exception('Failed to load appointment details');
     }
-
-    // Return mock data
-    return MockAppointments.getAppointmentById(id);
   }
 
   @override
   Future<Appointment?> cancelAppointment(String id) async {
-    // Simulate network delay for cancellation operation
-    await Future.delayed(const Duration(milliseconds: 1200));
+    try {
+      final response = await http.patch(
+        Uri.parse('${ApiConstants.baseUrl}/appointments/$id/cancel'),
+      );
 
-    // Simulate occasional errors (8% chance)
-    if (_random.nextInt(12) == 0) {
-      throw Exception('Failed to cancel appointment. Please try again.');
+      if (response.statusCode == 200) {
+        return AppointmentModel.fromJson(json.decode(response.body)).toEntity();
+      } else {
+        throw Exception('Failed to cancel appointment: ${response.statusCode}');
+      }
+    } catch (e) {
+      print('Error cancelling appointment: $e');
+      throw Exception('Failed to cancel appointment');
     }
-
-    // Cancel the appointment in mock data
-    return MockAppointments.cancelAppointment(id);
   }
 }

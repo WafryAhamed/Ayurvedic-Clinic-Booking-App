@@ -46,6 +46,7 @@ dependencies:
   
   # Shared Preferences for persisting user settings (e.g., first-launch flag)
   shared_preferences: ^2.2.2
+  http: ^1.6.0
 
 dev_dependencies:
   flutter_test:

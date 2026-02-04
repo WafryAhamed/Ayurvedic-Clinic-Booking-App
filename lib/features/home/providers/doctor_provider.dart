@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import '../../../domain/entities/doctor.dart';
-import '../../../domain/repositories/doctor_repository.dart';
-import '../../../data/repositories/mock_doctor_repository.dart';
+import '../../../domain/repositories/doctor_repository.dart'; // Restored
+import '../../../data/repositories/doctor_repository_impl.dart';
 
 /// Doctor provider state enum
 enum DoctorState { initial, loading, success, empty, error }
 
 /// Provider for managing doctor list and operations
 class DoctorProvider extends ChangeNotifier {
-  final DoctorRepository _repository = MockDoctorRepository();
+  final DoctorRepository _repository = DoctorRepositoryImpl();
 
   // State
   DoctorState _state = DoctorState.initial;
