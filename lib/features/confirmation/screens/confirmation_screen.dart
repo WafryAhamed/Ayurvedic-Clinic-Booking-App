@@ -333,12 +333,48 @@ class _ConfirmationScreenState extends State<ConfirmationScreen>
                 ),
               ),
 
-              // Done Button
+              // ============================================
+              // ACTION BUTTONS
+              // ============================================
+
+              // Primary: View My Appointments
               PrimaryButton(
-                text: 'Done',
-                onPressed: _goToHome,
-                icon: Icons.home,
+                text: 'View My Appointments',
+                onPressed: () {
+                  context.read<BookingProvider>().reset();
+                  Navigator.of(context).pushNamedAndRemoveUntil(
+                    '/my-appointments',
+                    (route) => false,
+                  );
+                },
+                icon: Icons.calendar_month,
               ),
+
+              SizedBox(height: AppSpacing.sm),
+
+              // Secondary: Book Another Appointment
+              OutlinedButton.icon(
+                onPressed: () {
+                  context.read<BookingProvider>().reset();
+                  Navigator.of(
+                    context,
+                  ).pushNamedAndRemoveUntil('/home', (route) => false);
+                },
+                icon: const Icon(Icons.add_circle_outline),
+                label: const Text('Book Another Appointment'),
+                style: OutlinedButton.styleFrom(
+                  minimumSize: const Size(double.infinity, 50),
+                  side: BorderSide(color: AppColors.primary),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(AppRadius.md),
+                  ),
+                ),
+              ),
+
+              SizedBox(height: AppSpacing.sm),
+
+              // Tertiary: Done (Go Home)
+              TextButton(onPressed: _goToHome, child: const Text('Done')),
             ],
           ),
         ),

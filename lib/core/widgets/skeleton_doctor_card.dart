@@ -105,7 +105,7 @@ class _SkeletonDoctorCardState extends State<SkeletonDoctorCard>
                       height: 12,
                       decoration: BoxDecoration(
                         color: _colorAnimation.value,
-                        borderRadius: BorderRadius.circular(AppRadius.xs),
+                        borderRadius: BorderRadius.circular(AppRadius.sm),
                       ),
                     ),
                     SizedBox(width: AppSpacing.md),
@@ -114,7 +114,7 @@ class _SkeletonDoctorCardState extends State<SkeletonDoctorCard>
                       height: 12,
                       decoration: BoxDecoration(
                         color: _colorAnimation.value,
-                        borderRadius: BorderRadius.circular(AppRadius.xs),
+                        borderRadius: BorderRadius.circular(AppRadius.sm),
                       ),
                     ),
                   ],
@@ -137,7 +137,7 @@ class _SkeletonDoctorCardState extends State<SkeletonDoctorCard>
                       height: 12,
                       decoration: BoxDecoration(
                         color: _colorAnimation.value,
-                        borderRadius: BorderRadius.circular(AppRadius.xs),
+                        borderRadius: BorderRadius.circular(AppRadius.sm),
                       ),
                     ),
                   ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_theme.dart';
 
@@ -15,6 +16,9 @@ class _SplashScreenState extends State<SplashScreen>
   late AnimationController _controller;
   late Animation<double> _fadeAnimation;
   late Animation<double> _scaleAnimation;
+
+  /// Key for SharedPreferences to track if onboarding has been completed
+  static const String _hasCompletedOnboardingKey = 'hasCompletedOnboarding';
 
   @override
   void initState() {
@@ -39,12 +43,33 @@ class _SplashScreenState extends State<SplashScreen>
     // Start animation
     _controller.forward();
 
-    // Navigate to onboarding after delay
-    Future.delayed(const Duration(seconds: 3), () {
-      if (mounted) {
-        Navigator.of(context).pushReplacementNamed('/onboarding');
-      }
-    });
+    // Check first-launch status and navigate accordingly
+    _checkFirstLaunchAndNavigate();
+  }
+
+  /// Checks if the user has completed onboarding and navigates to the
+  /// appropriate screen after a delay.
+  Future<void> _checkFirstLaunchAndNavigate() async {
+    // Wait for splash animation
+    await Future.delayed(const Duration(seconds: 3));
+
+    if (!mounted) return;
+
+    final prefs = await SharedPreferences.getInstance();
+
+    // Check mounted again after async operation
+    if (!mounted) return;
+
+    final hasCompletedOnboarding =
+        prefs.getBool(_hasCompletedOnboardingKey) ?? false;
+
+    if (hasCompletedOnboarding) {
+      // Returning user: go directly to Home
+      Navigator.of(context).pushReplacementNamed('/home');
+    } else {
+      // First-time user: show Onboarding
+      Navigator.of(context).pushReplacementNamed('/onboarding');
+    }
   }
 
   @override

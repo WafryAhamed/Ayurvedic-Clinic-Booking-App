@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/primary_button.dart';
@@ -14,6 +15,9 @@ class OnboardingScreen extends StatefulWidget {
 class _OnboardingScreenState extends State<OnboardingScreen> {
   final PageController _pageController = PageController();
   int _currentPage = 0;
+
+  /// Key for SharedPreferences to track if onboarding has been completed
+  static const String _hasCompletedOnboardingKey = 'hasCompletedOnboarding';
 
   final List<OnboardingPage> _pages = [
     OnboardingPage(
@@ -48,8 +52,15 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     });
   }
 
-  void _navigateToHome() {
-    Navigator.of(context).pushReplacementNamed('/home');
+  /// Marks onboarding as completed and navigates to Home
+  Future<void> _navigateToHome() async {
+    // Set the flag indicating onboarding is complete
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(_hasCompletedOnboardingKey, true);
+
+    if (mounted) {
+      Navigator.of(context).pushReplacementNamed('/home');
+    }
   }
 
   void _nextPage() {
