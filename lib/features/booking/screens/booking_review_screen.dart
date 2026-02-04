@@ -242,11 +242,35 @@ class BookingReviewScreen extends StatelessWidget {
         (route) => route.settings.name == '/home',
       );
     } else if (context.mounted) {
-      // Show error
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(provider.errorMessage ?? 'Failed to confirm booking'),
-          backgroundColor: AppColors.error,
+      // Show robust error dialog
+      showDialog(
+        context: context,
+        barrierDismissible: false,
+        builder: (context) => AlertDialog(
+          title: Row(
+            children: [
+              Icon(Icons.error_outline, color: AppColors.error),
+              SizedBox(width: AppSpacing.sm),
+              const Text('Booking Failed'),
+            ],
+          ),
+          content: Text(
+            provider.errorMessage ??
+                'We couldn\'t complete your booking due to a network issue. Please try again.',
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(context).pop(), // Close dialog
+              child: const Text('Cancel'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pop(); // Close dialog
+                _confirmBooking(context, provider); // Retry
+              },
+              child: const Text('Retry'),
+            ),
+          ],
         ),
       );
     }

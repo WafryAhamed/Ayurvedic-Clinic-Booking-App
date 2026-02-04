@@ -4,6 +4,11 @@ import '../../../core/theme/app_theme.dart';
 
 /// Doctor Management Screen (Future Scope)
 /// Manage doctor profiles and information
+/// Admin dashboard for managing doctors and appointments
+///
+/// NOTE: Doctor registration is NOT handled in the mobile app.
+/// Doctors are registered and approved by clinic administrators via the admin web portal.
+/// This screen only lists existing doctors for status management.
 class DoctorManagementScreen extends StatelessWidget {
   const DoctorManagementScreen({super.key});
 

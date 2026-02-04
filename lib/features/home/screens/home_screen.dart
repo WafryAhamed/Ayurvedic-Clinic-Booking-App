@@ -11,6 +11,7 @@ import '../widgets/dashboard_greeting_section.dart';
 import '../widgets/quick_action_card.dart';
 import '../widgets/upcoming_appointment_card.dart';
 import '../widgets/health_tip_card.dart';
+import '../../../core/widgets/skeleton_doctor_card.dart';
 
 /// Patient Dashboard - Home screen displaying comprehensive dashboard with:
 /// - Greeting section (context & trust)
@@ -143,14 +144,36 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           SizedBox(height: AppSpacing.lg),
 
-          // Loading indicator
-          const Center(child: CircularProgressIndicator()),
-          SizedBox(height: AppSpacing.md),
-          Text(
-            'Loading your dashboard...',
-            style: Theme.of(
-              context,
-            ).textTheme.bodyLarge?.copyWith(color: AppColors.textSecondary),
+          // Doctors List Skeleton
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                width: 150,
+                height: 24,
+                decoration: BoxDecoration(
+                  color: AppColors.surface,
+                  borderRadius: BorderRadius.circular(AppRadius.sm),
+                ),
+              ),
+              SizedBox(height: AppSpacing.sm),
+              SizedBox(
+                height: 200,
+                child: ListView.separated(
+                  scrollDirection: Axis.horizontal,
+                  physics: const NeverScrollableScrollPhysics(),
+                  itemCount: 3,
+                  separatorBuilder: (context, index) =>
+                      SizedBox(width: AppSpacing.md),
+                  itemBuilder: (context, index) {
+                    return SizedBox(
+                      width: 280,
+                      child: const SkeletonDoctorCard(),
+                    );
+                  },
+                ),
+              ),
+            ],
           ),
         ],
       ),
@@ -294,7 +317,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
             // ============================================
             // SECTION 5: Health Tips (Value-Added Content)
-            // UX: Non-diagnostic tips build trust
+            // UX: Always shown to provide value even in empty states
             // ============================================
             _buildHealthTipsSection(),
 
@@ -535,38 +558,37 @@ class _HomeScreenState extends State<HomeScreen> {
 
   /// Build empty state for doctors section
   Widget _buildEmptyDoctorsState() {
-    return Center(
-      child: Padding(
-        padding: EdgeInsets.all(AppSpacing.xl),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Text('🔍', style: TextStyle(fontSize: 60)),
-            SizedBox(height: AppSpacing.md),
-            Text(
-              'No Doctors Found',
-              style: Theme.of(
-                context,
-              ).textTheme.headlineSmall?.copyWith(fontWeight: FontWeight.bold),
+    return Container(
+      width: double.infinity,
+      padding: EdgeInsets.all(AppSpacing.lg),
+      decoration: BoxDecoration(
+        color: AppColors.surface,
+        borderRadius: BorderRadius.circular(AppRadius.lg),
+        border: Border.all(color: AppColors.divider),
+      ),
+      child: Column(
+        children: [
+          Icon(
+            Icons.medical_services_outlined,
+            size: 48,
+            color: AppColors.textSecondary,
+          ),
+          SizedBox(height: AppSpacing.sm),
+          Text(
+            'No Doctors Available',
+            style: Theme.of(context).textTheme.titleMedium?.copyWith(
+              fontWeight: FontWeight.bold,
+              color: AppColors.textPrimary,
             ),
-            SizedBox(height: AppSpacing.sm),
-            Text(
-              'Try adjusting your search or filters',
-              textAlign: TextAlign.center,
-              style: Theme.of(
-                context,
-              ).textTheme.bodyMedium?.copyWith(color: AppColors.textSecondary),
-            ),
-            SizedBox(height: AppSpacing.lg),
-            ElevatedButton(
-              onPressed: () {
-                context.read<DoctorProvider>().clearFilters();
-                context.read<DoctorProvider>().loadDoctors();
-              },
-              child: const Text('Clear Filters'),
-            ),
-          ],
-        ),
+          ),
+          SizedBox(height: AppSpacing.xs),
+          Text(
+            'Check back later for availability',
+            style: Theme.of(
+              context,
+            ).textTheme.bodySmall?.copyWith(color: AppColors.textSecondary),
+          ),
+        ],
       ),
     );
   }
