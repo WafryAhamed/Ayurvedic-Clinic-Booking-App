@@ -1,69 +1,37 @@
+
 <h1 align="center">🏥 Ayurvedic Clinic Booking App</h1>
 
 <p align="center">
-  <b>🌿 A modern Flutter-based healthcare appointment booking application</b><br/>
-  Multi-platform • Clean Architecture • User-Friendly
+  Flutter + Clean Architecture + ASP.NET Core Backend
 </p>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=flutter,dart,android,apple,linux,windows" />
+  A full-stack healthcare appointment booking system connecting patients with Ayurvedic doctors.
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Framework-Flutter_3-02569B?style=for-the-badge&logo=flutter&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Language-Dart-blue?style=for-the-badge&logo=dart"/>
-  <img src="https://img.shields.io/badge/Architecture-Clean_Architecture-green?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/State-Provider-orange?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Flutter-3.x-blue?style=for-the-badge&logo=flutter"/>
+  <img src="https://img.shields.io/badge/Dart-3.x-0175C2?style=for-the-badge&logo=dart"/>
+  <img src="https://img.shields.io/badge/.NET-ASP.NET_Core-purple?style=for-the-badge&logo=dotnet"/>
+  <img src="https://img.shields.io/badge/PostgreSQL-DB-336791?style=for-the-badge&logo=postgresql"/>
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Platform-Multi--Platform-blueviolet?style=for-the-badge"/>
-</p>
+
 
 ---
 
-## 📌 Overview
+## 🚀 Overview
 
-<div align="center">
+This project delivers a **modern full-stack healthcare solution** with:
 
-This project is a **Flutter-based Ayurvedic clinic booking application** that allows users to:
-
-✔ Browse doctors  
-✔ Filter by specialization  
-✔ Book appointments  
-✔ Manage schedules  
-
-Designed with a **clean architecture approach** and a **calm healthcare UI theme**.
-
-</div>
+* 📱 Flutter cross-platform application
+* ⚙️ ASP.NET Core backend API
+* 🗄️ PostgreSQL database
+* 🧠 Clean Architecture design
 
 ---
 
-## 🌿 Features
+## 🏗️ Architecture
 
-### 👤 Patients
-- Browse doctors by specialization  
-- Search doctors easily  
-- Filter by experience, rating, and fee  
-- Book appointments  
-- View appointment details  
-- Cancel or reschedule appointments  
-
----
-
-### 🩺 Core Booking Flow
-- Patient Information  
-- Date & Time Selection  
-- Booking Review  
-- Confirmation Screen  
-
----
-
-### ⚙️ Additional Features
-- Onboarding screens  
-- Profile management  
-- Settings & legal pages  
-- Error / loading states  
-- Offline handling  
+<img width="1536" height="1024" alt="ChatGPT Image Apr 28, 2026, 08_00_02 AM" src="https://github.com/user-attachments/assets/64f79349-c686-4622-8adb-79ac4f42c738" />
 
